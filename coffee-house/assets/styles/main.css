@@ -1,0 +1,79 @@
+.main__box-fixed {
+    padding: 0 40px 100px;
+}
+
+.main__bc {
+    border-radius: 40px;
+    background-image: url("./../../assets/img/img-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.main__box {
+    padding: 101px 100px 100px;
+}
+
+.main__h1 {
+    max-width: 530px;
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.main__desc {
+    margin-top: 42px;
+    max-width: 530px;
+    width: 100%;
+}
+
+.main__btn {
+    margin-top: 40px;
+    padding: 20px 75px;
+    background-color: var(--bc);
+    border-radius: 40px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.main__btn .mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main__box {
+        padding: 101px 60px 100px;
+    }
+
+    .main__btn {
+        display: flex;
+        padding: 20px 64px;
+        column-gap: 8px;
+    }
+
+    .main__btn .header__menu-text {
+        font-size: 16px;
+    }
+
+    .main__btn .header__menu-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main__btn .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__box-fixed {
+        padding: 0 16px 0;
+    }
+
+    .main__box {
+        padding: 60px 16px 60px;
+    }
+
+    .main__btn {
+        margin-top: 38px;
+    }
+}

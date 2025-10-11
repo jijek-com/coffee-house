@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "fonts.css";
+@import "main.css";
+@import "favorite.css";
+@import "about.css";
+@import "mobile.css";
+
+:root {
+    --bc: #E1D4C9;
+    --text-dark: #403F3D;
+    --text-accent: #B0907A;
+    --text-light: #E1D4C9;
+    --border-dark: #665F55;
+    --border-light: #C1B6AD
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: var(--bc);
+    color: var(--text-dark);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    line-height: 24px;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: var(--text-dark);
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.text-accent {
+    color: var(--text-accent)
+}
+
+.text-light {
+    color: var(--text-light)
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
