@@ -206,15 +206,15 @@ class Header extends HTMLElement {
                     <nav class="header__nav">
                         <ul class="header__ul menu">
                             <li class="menu__item">
-                                <a class="menu__link fs-links" href="./coffee-house/#favorite">Favorite coffee</a>
+                                <a class="menu__link fs-links" href="./#favorite">Favorite coffee</a>
                             </li>
 
                             <li class="menu__item">
-                                <a class="menu__link fs-links" href="./coffee-house/#about">About</a>
+                                <a class="menu__link fs-links" href="./#about">About</a>
                             </li>
 
                             <li class="menu__item">
-                                <a class="menu__link fs-links" href="./coffee-house/#mobile">Mobile app</a>
+                                <a class="menu__link fs-links" href="./#mobile">Mobile app</a>
                             </li>
 
                             <li class="menu__item">
