@@ -152,10 +152,14 @@ class Footer extends HTMLElement {
 
                         <ul class="footer__menu">
                             <li class="footer__li">
-                                <address class="footer__tem item">
-                                    <img src="./assets/img/pin-alt.svg" alt="icon Location" >
-                                    <span class="item__text fs-medium fw-semibold text-light">8558 Green Rd.,  LA</span>
-                                </address>
+                                <a
+                                    target="_blank"
+                                    href="./address.html">
+                                    <address class="footer__tem item">
+                                        <img src="./assets/img/pin-alt.svg" alt="icon Location" >
+                                        <span class="item__text fs-medium fw-semibold text-light">8558 Green Rd.,  LA</span>
+                                    </address>                            
+                                </a>
                             </li>
 
                             <li class="footer__li">

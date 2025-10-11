@@ -5,6 +5,31 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('header-component');
+            const curPage = header.getAttribute('data-page');
+
+            const btnMenus = document.querySelectorAll('button.header__menu');
+
+            const burger = document.querySelector('.header__burger');
+            const menu = document.querySelector('.header__nav');
+            const links = document.querySelectorAll('.header__nav a');
+
+            btnMenus.forEach(btn => {
+                if (curPage === 'menu') btn.classList.add('disabled');
+
+                btn.addEventListener('click', (e) => {
+                    if (burger.classList.contains('active')) toggleMenu();
+
+                    if (curPage === 'menu') {
+                        e.preventDefault();
+                        return;
+                    }
+
+                    window.location.href = 'menu.html';
+                });
+            })
+
+
             function lockBody() {
                 const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
                 document.body.style.paddingRight = scrollBarWidth + 'px';
@@ -16,17 +41,11 @@ class Header extends HTMLElement {
                 document.body.classList.remove('lock');
             }
 
-            const burger = document.querySelector('.header__burger');
-            const menu = document.querySelector('.header__nav');
-            const links = document.querySelectorAll('.header__nav a');
-
             function toggleMenu() {
                 const isActive = burger.classList.toggle('active');
                 menu.classList.toggle('active');
 
-                const isMobile = window.innerWidth <= 768;
-
-                if (isMobile) isActive ? lockBody() : unlockBody();
+                isActive && window.innerWidth <= 768 ? lockBody() : unlockBody();
             }
 
             burger.addEventListener('click', toggleMenu);
@@ -74,11 +93,20 @@ class Header extends HTMLElement {
                 align-self: baseline;
                 column-gap: 8px;
                 transition: border .6s;
+                border-bottom: 2px solid transparent;
+            }
+            
+            .header__menu.disabled {
+                cursor: inherit;
             }
 
             @media (hover: hover) and (pointer: fine) {
                 .header__menu:hover {
                     border-bottom: 2px solid var(--border-dark);
+                }
+                
+                .header__menu.disabled:hover {
+                    border-bottom: 2px solid transparent;
                 }
             }
             
@@ -199,7 +227,7 @@ class Header extends HTMLElement {
         <header class="header">
             <div class="container">
                 <div class="header__box-fixed">
-                    <a href="#" class="header__logo">
+                    <a href="./" class="header__logo">
                         <img src="./assets/img/logo.svg" alt="logo icon">
                     </a>
 
@@ -222,7 +250,7 @@ class Header extends HTMLElement {
                             </li>
 
                             <li class="menu__item mobile">
-                                <button class="header__menu" onclick="window.location.href='menu.html'">
+                                <button class="header__menu" id="btnMenu">
                                     <span class="header__menu-text fs-links">Menu</span>
                                     <img class="header__menu-icon" src="./assets/img/coffee-cup.svg" alt="Icon Menu" >
                                 </button>
@@ -230,7 +258,7 @@ class Header extends HTMLElement {
                         </ul>
                     </nav>
 
-                    <button class="header__menu" onclick="window.location.href='menu.html'">
+                    <button class="header__menu">
                         <span class="header__menu-text fs-links">Menu</span>
                         <img class="header__menu-icon" src="./assets/img/coffee-cup.svg" alt="Icon Menu" >
                     </button>
