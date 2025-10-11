@@ -190,6 +190,11 @@
     transition: background-color .6s ease-in;
 }
 
+.modal__additive-label {
+    cursor: pointer;
+    padding: 8px 15px 8px 7px;
+}
+
 .modal__additive-input {
     display: none;
 }
@@ -241,9 +246,14 @@
 
 .modal__size-btns {
     margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 8px;
 }
 
 .modal__size-btn {
+    cursor: pointer;
     padding: 8px;
     margin-right: 2px;
 }
@@ -282,6 +292,10 @@
 
 .modal__additives-btns {
     margin-top: 6px;
+    display: flex;
+    column-gap: 8px;
+    row-gap: 8px;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -295,6 +309,36 @@
 
     .dishes__card {
         padding: 40px 40px 42px;
+    }
+
+    .modal__content {
+        max-width: 656px;
+    }
+    .modal__price {
+        margin-top: 21px;
+    }
+
+    .modal__options {
+        margin-top: 21px;
+    }
+
+    .modal__size-btns {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .modal__image {
+        display: none;
+    }
+
+    .modal__content {
+        max-width: calc(100% - 70px);
+    }
+
+    .modal__info {
+        padding: 0;
     }
 }
 

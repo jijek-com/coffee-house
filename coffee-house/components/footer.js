@@ -54,7 +54,7 @@ class Footer extends HTMLElement {
                 margin-bottom: 17.5px;
             }
             
-            .footer__tem {
+            .footer__item {
                 cursor: pointer;
                 display: inline-block;
                 border-bottom: 2px solid transparent;
@@ -65,7 +65,7 @@ class Footer extends HTMLElement {
                 margin-right: 4px;
             }
             
-            .footer__tem svg {
+            .footer__item svg {
                 margin-right: 4px;
             }
             
@@ -88,12 +88,12 @@ class Footer extends HTMLElement {
                     stroke: var(--text-dark)
                 }
             
-                .footer__tem:hover {
+                .footer__item:hover {
                     border-bottom: 2px solid var(--border-light)
                 }
             }
             
-            .footer__tem .item__text {
+            .footer__item .item__text {
                 position: relative;
                 top: -2px;
             }
@@ -160,10 +160,8 @@ class Footer extends HTMLElement {
                                     class="footer__item item"
                                     target="_blank"
                                     href="./address.html">
-<!--                                    <address >-->
-                                        <img src="./assets/img/pin-alt.svg" alt="icon Location" >
-                                        <span class="item__text fs-medium fw-semibold text-light">8558 Green Rd.,  LA</span>
-<!--                                    </address>                            -->
+                                    <img src="./assets/img/pin-alt.svg" alt="icon Location" >
+                                    <span class="item__text fs-medium fw-semibold text-light">8558 Green Rd.,  LA</span>
                                 </a>
                             </li>
 
