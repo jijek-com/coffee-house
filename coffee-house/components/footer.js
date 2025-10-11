@@ -51,7 +51,7 @@ class Footer extends HTMLElement {
             }
             
             .footer__li {
-                margin-bottom: 15.5px;
+                margin-bottom: 17.5px;
             }
             
             .footer__tem {
@@ -59,6 +59,10 @@ class Footer extends HTMLElement {
                 display: inline-block;
                 border-bottom: 2px solid transparent;
                 transition: border .6s;
+            }
+            
+            .footer__item img {
+                margin-right: 4px;
             }
             
             .footer__tem svg {
@@ -153,24 +157,25 @@ class Footer extends HTMLElement {
                         <ul class="footer__menu">
                             <li class="footer__li">
                                 <a
+                                    class="footer__item item"
                                     target="_blank"
                                     href="./address.html">
-                                    <address class="footer__tem item">
+<!--                                    <address >-->
                                         <img src="./assets/img/pin-alt.svg" alt="icon Location" >
                                         <span class="item__text fs-medium fw-semibold text-light">8558 Green Rd.,  LA</span>
-                                    </address>                            
+<!--                                    </address>                            -->
                                 </a>
                             </li>
 
                             <li class="footer__li">
-                                <a class="footer__tem item" href="tel:+16035550123" >
+                                <a class="footer__item item" href="tel:+16035550123" >
                                     <img src="./assets/img/phone.svg" alt="icon phone" >
                                     <span class="item__text fs-medium fw-semibold text-light">+1 (603) 555-0123</span>
                                 </a>
                             </li>
 
                             <li class="footer__li">
-                                <div class="footer__tem item">
+                                <div class="footer__item item">
                                     <img src="./assets/img/clock.svg" alt="icon clock" >
                                     <span class="item__text fs-medium fw-semibold text-light">Mon-Sat: 9:00 AM – 23:00 PM</span>
                                 </div>

@@ -11,8 +11,9 @@
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-    <script src="components/header.js" defer></script>
-    <script src="components/footer.js" defer></script>
+    <script src="./components/header.js" defer></script>
+    <script src="./components/footer.js" defer></script>
+    <script src="./components/menu.js" defer></script>
 </head>
 <body>
 
@@ -202,12 +203,43 @@
     <div class="modal" id="dishModal">
         <div class="modal__overlay"></div>
         <div class="modal__content">
-            <div class="modal__image">
+            <img src="./assets/img/info-empty.svg" class="modal__image" alt="Image">
 
-            </div>
+            <div class="modal__info">
+                <h3 class="modal__title heading3"></h3>
+                <p class="modal__desc fs-medium"></p>
 
-            <div class="modal__boxed">
-                modal
+                <div class="modal__options">
+                    <div class="modal__sizes">
+                        <h4 class="fs-medium">Size</h4>
+
+                        <div class="modal__size-btns"></div>
+                    </div>
+
+                    <div class="modal__additives">
+                        <h4 class="fs-medium">Additives</h4>
+
+                        <div class="modal__additives-btns"></div>
+                    </div>
+                </div>
+
+                <p class="modal__price heading3">Total: <span id="modalPrice">$0.00</span></p>
+
+                <hr class="modal__hr">
+
+                <div class="modal__warning">
+                    <img class="modal__warning-img" src="./assets/img/info-empty.svg" alt="Image warning">
+
+                    <div class="modal__warning-text fs-body-caption">
+                        The cost is not final. Download our mobile app to see the final price and place your order.
+                        Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+                    </div>
+                </div>
+
+                <div class="modal__close">
+                    <button class="modal__close-btn fs-medium">Close</button>
+                </div>
+
             </div>
         </div>
     </div>
