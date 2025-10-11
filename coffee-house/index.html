@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="./assets/styles/styles.css">
 
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
 </head>
 <body>
 
@@ -24,7 +24,8 @@
                         <div class="main__bc">
                             <div class="main__box">
                                 <h1 class="main__h1">
-                                    <span class="text-accent fs-italic fw-semibold">Enjoy </span>
+                                    <span class="text-accent fs-italic fw-semibold pointer"
+                                          onclick="window.location.href='menu.html'">Enjoy </span>
                                     <span class="text-light">premium coffee at our charming cafe</span>
                                 </h1>
 
@@ -87,10 +88,14 @@
                             <div class="carousel__controls">
                                 <div class="carousel__btns">
                                     <button class="carousel__left">
-                                        <img src="./assets/img/arrow-left.svg" alt="icon arrow left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </button>
                                     <button class="carousel__right">
-                                        <img src="./assets/img/arrow-left.svg" alt="icon arrow left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </button>
                                 </div>
 
@@ -172,6 +177,6 @@
        <footer-component></footer-component>
     </div>
 
-    <script src="./index.js"></script>
+
 </body>
 </html>

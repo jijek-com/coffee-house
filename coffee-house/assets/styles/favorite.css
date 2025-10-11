@@ -35,12 +35,28 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 1px solid var(--border-dark)
+    border: 1px solid var(--border-dark);
+    transition: background-color .6s ease;
 }
 
-.carousel__right img {
+.carousel__btns button path {
+    transition: stroke .6s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .carousel__btns button:hover {
+        background: var(--border-dark);
+    }
+
+    .carousel__btns button:hover path {
+        stroke: var(--text-light);
+    }
+}
+
+.carousel__right svg {
     rotate: 180deg;
 }
+
 
 .item__img {
     display: block;

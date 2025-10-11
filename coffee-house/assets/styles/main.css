@@ -27,16 +27,25 @@
 }
 
 .main__btn {
+    display: flex;
     margin-top: 40px;
     padding: 20px 75px;
     background-color: var(--bc);
+    column-gap: 8px;
     border-radius: 40px;
     max-width: 200px;
     width: 100%;
 }
 
 .main__btn .mobile {
-    display: none;
+    opacity: 0;
+    transition: .6s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .main__btn:hover .mobile {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -45,9 +54,7 @@
     }
 
     .main__btn {
-        display: flex;
         padding: 20px 64px;
-        column-gap: 8px;
     }
 
     .main__btn .header__menu-text {
@@ -57,10 +64,6 @@
     .main__btn .header__menu-icon {
         width: 20px;
         height: 20px;
-    }
-
-    .main__btn .mobile {
-        display: block;
     }
 }
 

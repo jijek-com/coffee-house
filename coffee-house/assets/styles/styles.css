@@ -4,6 +4,7 @@
 @import "favorite.css";
 @import "about.css";
 @import "mobile.css";
+@import "offer.css";
 
 :root {
     --bc: #E1D4C9;
@@ -57,6 +58,10 @@ button {
 
 body.lock {
     overflow: hidden;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .text-accent {
