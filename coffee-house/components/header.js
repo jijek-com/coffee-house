@@ -119,6 +119,10 @@ class Header extends HTMLElement {
                 height: 20px;
             }
             
+            .header__logo {
+               height: 64px;
+            }
+            
             .header__burger {
                 display: none;
                 position: relative;
