@@ -862,7 +862,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'card';
         card.innerHTML = `
           <div class="card__wrap-img">
-            <img class="card__img" src="${img}" alt="${name}">
+            <img class="card__img" src="${img}" alt="${name}" loading="lazy">
           </div>
           <div class="card__boxed">
             <div class="card__row">

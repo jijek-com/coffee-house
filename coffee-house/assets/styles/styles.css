@@ -83,3 +83,7 @@ body.lock {
     max-width: 1440px;
     width: 100%;
 }
+
+.hidden {
+    display: none;
+}
