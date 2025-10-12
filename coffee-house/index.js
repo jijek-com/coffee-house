@@ -91,10 +91,8 @@ leftBtn.addEventListener('click', () => {
 
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        // вкладка неактивна — стоп
         stopAutoPlay();
     } else {
-        // вкладка снова активна — продолжить корректно
         startAutoPlay();
         resetProgress();
     }

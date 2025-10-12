@@ -166,13 +166,13 @@ class Header extends HTMLElement {
                     top: 100px;
                     right: -100%;
                     width: calc(100% - 40px);
-                    height: calc(100% - 290px);
+                    height: calc(100vh - 100px);
                     display: flex;
                     justify-content: center;
                     transition: right 0.3s ease;
                     z-index: 20;
                     background: var(--bc);
-                    padding: 96px 20px;
+                    padding: 75px 20px;
                 }
             
                 .header__nav.active {

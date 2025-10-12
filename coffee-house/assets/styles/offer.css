@@ -377,4 +377,8 @@
     .dishes__card {
         padding: 40px 30px 42px;
     }
+
+    .offer__links {
+        column-gap: 3px;
+    }
 }
