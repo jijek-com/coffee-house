@@ -38,6 +38,7 @@
 }
 
 .offer__links-text {
+    color: var(--text-dark);
     transition: color .6s ease-in;
 }
 
@@ -47,6 +48,8 @@
 }
 
 .offer__links-li.active {
+    pointer-events: none;
+    cursor: default;
     background: var(--border-dark);
 }
 
@@ -186,7 +189,7 @@
     padding: 0 0 0 20px;
 }
 
-.modal .modal__size-btn, .modal__additive-label {
+.modal .modal__size-btn, .modal .modal__additive-label {
     padding: 8px 20px 8px 7px;
     display: inline-block;
     border-radius: 40px;
@@ -194,7 +197,7 @@
     transition: background-color .6s ease-in;
 }
 
-.modal__additive-label {
+.modal .modal__additive-label {
     cursor: pointer;
     padding: 8px 15px 8px 7px;
 }
@@ -263,7 +266,13 @@
     }
 }
 
-.modal .modal__size-btn.active, .modal__additive-label.active {
+.modal .modal__size-btn.active {
+    background: var(--border-dark);
+    pointer-events: none;
+    cursor: default;
+}
+
+.modal .modal__additive-label.active {
     background: var(--border-dark);
 }
 
@@ -279,9 +288,8 @@
     row-gap: 8px;
 }
 
-.modal__size-btn {
+.modal .modal__size-btn {
     cursor: pointer;
-    padding: 8px;
     margin-right: 2px;
 }
 
@@ -291,6 +299,7 @@
     width: 30px;
     height: 30px;
     background: var(--border-light);
+    color: var(--text-dark);
     border-radius: 40px;
     font-size: 16px;
     line-height: 30px;

@@ -79,12 +79,14 @@ function startAutoPlay() {
 
 rightBtn.addEventListener('click', () => {
     stopAutoPlay();
+    remainingTime = intervalDuration;
     nextSlide();
     startAutoPlay();
 });
 
 leftBtn.addEventListener('click', () => {
     stopAutoPlay();
+    remainingTime = intervalDuration;
     prevSlide();
     startAutoPlay();
 });
@@ -120,6 +122,8 @@ carouselItems.addEventListener('touchend', (e) => {
     const diff = endX - startX;
     if (diff > 50) prevSlide();
     if (diff < -50) nextSlide();
+
+    remainingTime = intervalDuration;
     startAutoPlay();
     resetProgress();
 });

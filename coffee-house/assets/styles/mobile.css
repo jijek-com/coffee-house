@@ -46,12 +46,10 @@
 
     .mobile__btn:hover svg path {
         fill: var(--text-light);
+        transition: fill .6s;
     }
 }
 
-.mobile__btn:hover svg path {
-    transition: fill .6s;
-}
 
 .mobile__btn-text-top {
     text-align: left;

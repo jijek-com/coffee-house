@@ -783,9 +783,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const price = modal.querySelector('#modalPrice');
         const modalOverlay = modal.querySelector('.modal__overlay');
 
-        modal.querySelector('.modal__close-btn').addEventListener('click', () => {
-            closeModal()
-        });
+        modal.querySelector('.modal__close-btn').addEventListener('click', () => closeModal());
 
         modalOverlay.addEventListener('click', closeModal);
 
@@ -797,6 +795,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function resetPrice() {
             basePrice = 0;
+            currentSize = 's';
             selectedAdditives = [];
         }
 
