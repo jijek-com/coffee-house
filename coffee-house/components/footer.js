@@ -51,7 +51,7 @@ class Footer extends HTMLElement {
             }
             
             .footer__li {
-                margin-bottom: 17.5px;
+                margin-bottom: 15.5px;
             }
             
             .footer__item {

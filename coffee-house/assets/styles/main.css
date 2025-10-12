@@ -32,11 +32,12 @@
     margin-top: 42px;
     max-width: 530px;
     width: 100%;
+    letter-spacing: 0.05px;
 }
 
 .main__btn {
     display: flex;
-    margin-top: 40px;
+    margin-top: 39px;
     padding: 20px 75px;
     background-color: var(--bc);
     column-gap: 8px;

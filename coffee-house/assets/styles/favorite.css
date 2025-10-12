@@ -5,11 +5,12 @@
 
 .favorite__carousel {
     position: relative;
+    overflow: hidden;
 }
 
 .carousel__list {
     display: flex;
-    overflow: hidden;
+    transition: transform 0.6s ease;
 }
 
 .carousel__item {
@@ -91,23 +92,27 @@
 }
 
 .carousel__indicators .indicator {
+    position: relative;
     display: block;
     width: 40px;
     height: 4px;
     background: var(--border-light);
     border-radius: 6px;
+    overflow: hidden;
 }
 
-.carousel__indicators .indicator.active {
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
     background: var(--border-dark);
+    transition: width linear;
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 500px) {
-
+.indicator.active .progress {
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
