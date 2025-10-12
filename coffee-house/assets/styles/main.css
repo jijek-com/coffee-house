@@ -14,6 +14,7 @@
     object-fit: cover;
     pointer-events: none;
     border-radius: 40px;
+    background: url('./../../assets/img/video-poster.png') center/cover no-repeat;
 }
 
 .main__box {
