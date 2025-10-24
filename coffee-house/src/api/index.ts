@@ -1,4 +1,4 @@
-const BASE_URL = 'http://coffee-shop-be.eu-central-1.elasticbeanstalk.com';
+const BASE_URL = 'https://coffee-shop-be.eu-central-1.elasticbeanstalk.com';
 
 export const API_URL = {
   favorite: `${BASE_URL}/products/favorites`,
