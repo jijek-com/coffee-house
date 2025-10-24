@@ -1,4 +1,4 @@
-const BASE_URL = 'https://coffee-shop-be.eu-central-1.elasticbeanstalk.com';
+const BASE_URL = 'https://6kt29kkeub.execute-api.eu-central-1.amazonaws.com/';
 
 export const API_URL = {
   favorite: `${BASE_URL}/products/favorites`,
