@@ -1,393 +1,500 @@
 .offer__section {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .offer__section h2 {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
 }
 
 .offer__links {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    column-gap: 12px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
 }
 
 .offer__links .offer__links-li {
-    padding: 7px 18px 7px 9px;
-    display: inline-block;
-    border-radius: 40px;
-    border: 1px solid var(--border-light)
+  padding: 7px 18px 7px 9px;
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid var(--border-light);
 }
 
 .offer__links-img {
-    display: inline-block;
-    margin-right: 4px;
-    margin-top: 0;
-    width: 30px;
-    height: 30px;
-    background: var(--border-light);
-    border-radius: 40px;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    transition: background-color .6s ease-in;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 0;
+  width: 30px;
+  height: 30px;
+  background: var(--border-light);
+  border-radius: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  transition: background-color 0.6s ease-in;
 }
 
 .offer__links-text {
-    color: var(--text-dark);
-    transition: color .6s ease-in;
+  color: var(--text-dark);
+  transition: color 0.6s ease-in;
 }
 
 .offer__links-li {
-    cursor: pointer;
-    transition: background-color .6s ease-in;
+  cursor: pointer;
+  transition: background-color 0.6s ease-in;
 }
 
 .offer__links-li.active {
-    pointer-events: none;
-    cursor: default;
-    background: var(--border-dark);
+  pointer-events: none;
+  cursor: default;
+  background: var(--border-dark);
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .offer__links-li:hover {
-        background: var(--border-dark);
-    }
+  .offer__links-li:hover {
+    background: var(--border-dark);
+  }
 
-    .offer__links-li:hover .offer__links-img {
-        background: var(--bc);
-    }
+  .offer__links-li:hover .offer__links-img {
+    background: var(--bc);
+  }
 
-    .offer__links-li:hover .offer__links-text {
-        color: var(--text-light);
-    }
+  .offer__links-li:hover .offer__links-text {
+    color: var(--text-light);
+  }
 }
 
 .active .offer__links-img {
-    background: var(--bc);
+  background: var(--bc);
 }
 
 .active .offer__links-text {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
 .dishes__card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 42px;
-    padding: 40px 40px 102px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 42px;
+  padding: 40px 40px 102px;
 }
 
 .dishes__load-btn {
-    margin: 0 auto;
-    width: 60px;
-    height: 60px;
-    border: 1px solid var(--border-dark);
-    border-radius: 50%;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border-dark);
+  border-radius: 50%;
+}
+
+.dishes__load-container {
+  display: flex;
 }
 
 .dishes__load-btn svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .card {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    max-width: 308px;
-    width: 100%;
-    border: 1px solid var(--border-light);
-    border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  max-width: 308px;
+  width: 100%;
+  border: 1px solid var(--border-light);
+  border-radius: 40px;
 }
 
 .card__desc {
-    min-height: 72px;
+  min-height: 72px;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .card:hover .card__img {
-        transform: scale(0.9);
-    }
+  .card:hover .card__img {
+    transform: scale(0.9);
+  }
 
-    .modal__image:hover {
-        transform: scale(0.9);
-    }
+  .modal__image:hover {
+    transform: scale(0.9);
+  }
 }
 
 .card__img {
-    border-radius: 39px;
-    max-width: 340px;
-    width: 100%;
-    height: 309px;
-    transition: transform .6s ease;
+  border-radius: 39px;
+  max-width: 340px;
+  width: 100%;
+  height: 309px;
+  transition: transform 0.6s ease;
 }
 
 .card__boxed {
-    padding: 17px 19px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 17px 19px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__desc {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .card__price {
-    margin-top: 12px;
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.card__price--crossed {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
 
 .modal {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 30;
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
 }
 
 .modal.active {
-    display: flex;
+  display: flex;
 }
 
 .modal__overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(34, 34, 34, 0.6);
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+.modal__body {
+  position: relative;
+  background: var(--bc);
+  padding: 16px;
+  max-width: 768px;
+  width: 90%;
+  z-index: 1;
+  border-radius: 40px;
+  animation: fadeInUp 0.3s ease;
+}
+
+.modal__error-message {
+  width: 100%;
+  text-align: center;
 }
 
 .modal__content {
-    position: relative;
-    display: flex;
-    background: var(--bc);
-    padding: 16px;
-    max-width: 768px;
-    width: 90%;
-    z-index: 1;
-    border-radius: 40px;
-    animation: fadeInUp 0.3s ease;
+  display: flex;
 }
 
 .modal__image {
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
 .modal__desc {
-    margin-top: 13px;
+  margin-top: 13px;
 }
 
 .modal__info {
-    padding: 0 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
-.modal .modal__size-btn, .modal .modal__additive-label {
-    padding: 8px 20px 8px 7px;
-    display: inline-block;
-    border-radius: 40px;
-    border: 1px solid var(--border-light);
-    transition: background-color .6s ease-in;
-}
-
+.modal .modal__size-btn,
 .modal .modal__additive-label {
-    cursor: pointer;
-    padding: 8px 15px 8px 7px;
+  position: relative;
+  padding: 8px 20px 8px 7px;
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid var(--border-light);
+  transition: background-color 0.6s ease-in;
 }
 
-.modal__additive-input {
-    display: none;
-}
-
-.modal__price {
-    margin-top: 22px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.modal .modal__image {
-    height: 310px;
-    transition: transform .6s ease;
-}
-
-.modal__hr {
-    margin-top: 22px;
-    margin-bottom: 11px;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.modal__warning {
-    display: flex;
-    align-items: flex-start;
-    column-gap: 8px;
-}
-
-.modal__warning-text {
-    line-height: 14px;
-}
-
-.modal__close {
-    margin-top: 32px;
-}
-
-.modal__close-btn {
-    padding: 10px 90px 8px;
-    width: 100%;
-    border: 1px solid var(--border-dark);
-    border-radius: 40px;
-    transition: background-color .6s ease, color .6s ease;
+.tooltip {
+  display: none;
+  position: absolute;
+  background: var(--bc);
+  border: 1px solid var(--border-dark);
+  padding: 4px 8px;
+  top: -35px;
+  left: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 16px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.3s ease-in;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .modal__close-btn:hover {
-        background-color: var(--border-dark);
-        color: var(--text-light);
-    }
+  .modal__size-btn:hover .tooltip,
+  .modal__additive-label:hover .tooltip {
+    display: block;
+  }
+}
 
-    .modal .modal__size-btn:hover, .modal__additive-label:hover {
-        background: var(--border-dark);
-    }
+.modal .modal__additive-label {
+  cursor: pointer;
+  padding: 8px 15px 8px 7px;
+}
 
-    .modal .modal__size-btn:hover .modal__size-btn-letter,
-    .modal__additive-label:hover .modal__additive-numb {
-        background: var(--bc);
-    }
+.modal__additive-input {
+  display: none;
+}
 
-    .modal .modal__size-btn:hover .modal__size-btn-text,
-    .modal__additive-label:hover .modal__additive-text {
-        color: var(--text-light);
-    }
+.modal__price {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .modal__image {
+  height: 310px;
+  transition: transform 0.6s ease;
+}
+
+.modal__hr {
+  margin-top: 22px;
+  margin-bottom: 11px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.modal__warning {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+}
+
+.modal__warning-text {
+  line-height: 14px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  cursor: pointer;
+}
+
+.modal__close-btn::before,
+.modal__close-btn::after {
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 21px;
+  width: 2px;
+  height: 16px;
+  background: var(--border-light);
+  rotate: -45deg;
+}
+
+.modal__close-btn::before {
+  rotate: 45deg;
+}
+
+.modal__buy {
+  margin-top: 32px;
+}
+
+.modal__buy-btn {
+  padding: 10px 90px 8px;
+  width: 100%;
+  border: 1px solid var(--border-dark);
+  border-radius: 40px;
+  transition:
+    background-color 0.6s ease,
+    color 0.6s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .modal__buy-btn:hover {
+    background-color: var(--border-dark);
+    color: var(--text-light);
+  }
+
+  .modal .modal__size-btn:hover,
+  .modal__additive-label:hover {
+    background: var(--border-dark);
+  }
+
+  .modal .modal__size-btn:hover .modal__size-btn-letter,
+  .modal__additive-label:hover .modal__additive-numb {
+    background: var(--bc);
+  }
+
+  .modal .modal__size-btn:hover .modal__size-btn-text,
+  .modal__additive-label:hover .modal__additive-text {
+    color: var(--text-light);
+  }
 }
 
 .modal .modal__size-btn.active {
-    background: var(--border-dark);
-    pointer-events: none;
-    cursor: default;
+  background: var(--border-dark);
+  cursor: default;
 }
 
 .modal .modal__additive-label.active {
-    background: var(--border-dark);
+  background: var(--border-dark);
 }
 
 .modal__options {
-    margin-top: 21px;
+  margin-top: 21px;
 }
 
 .modal__size-btns {
-    margin-top: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 5px;
-    row-gap: 8px;
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 8px;
 }
 
 .modal .modal__size-btn {
-    cursor: pointer;
-    margin-right: 2px;
+  cursor: pointer;
+  margin-right: 2px;
 }
 
-.modal .modal__size-btn-letter, .modal .modal__additive-numb {
-    display: inline-block;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-    background: var(--border-light);
-    color: var(--text-dark);
-    border-radius: 40px;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    transition: background-color .6s ease-in;
+.modal .modal__size-btn-letter,
+.modal .modal__additive-numb {
+  display: inline-block;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background: var(--border-light);
+  color: var(--text-dark);
+  border-radius: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  transition: background-color 0.6s ease-in;
 }
 
 .modal .modal__size-btn.active .modal__size-btn-letter,
 .modal__additive-label.active .modal__additive-numb {
-    background: var(--bc);
+  background: var(--bc);
 }
 
 .modal .modal__size-btn .modal__size-btn-text {
-    color: var(--text-dark);
-    transition: color .6s ease-in;
+  color: var(--text-dark);
+  transition: color 0.6s ease-in;
 }
 
 .modal .modal__size-btn.active .modal__size-btn-text,
 .modal__additive-label.active .modal__additive-text {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
 .modal__additives {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .modal__additives-btns {
-    margin-top: 6px;
-    display: flex;
-    column-gap: 8px;
-    row-gap: 8px;
-    flex-wrap: wrap;
+  margin-top: 6px;
+  display: flex;
+  column-gap: 8px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loader-overlay.hidden {
+  display: none;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #403f3d;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .offer__section h2 {
-        max-width: 690px;
-    }
+  .offer__section h2 {
+    max-width: 690px;
+  }
 
-    .offer__box-fixed {
-        padding-bottom: 100px;
-    }
+  .offer__box-fixed {
+    padding-bottom: 100px;
+  }
 
-    .dishes__card {
-        padding: 40px 40px 42px;
-    }
+  .dishes__card {
+    padding: 40px 40px 42px;
+  }
 
-    .modal__content {
-        max-width: 656px;
-    }
-    .modal__price {
-        margin-top: 21px;
-    }
+  .modal__content {
+    max-width: 656px;
+  }
+  .modal__price {
+    margin-top: 21px;
+  }
 
-    .modal__options {
-        margin-top: 21px;
-    }
+  .modal__options {
+    margin-top: 21px;
+  }
 
-    .modal__size-btns {
-        column-gap: 5px;
-        row-gap: 5px;
-    }
+  .modal__size-btns {
+    column-gap: 5px;
+    row-gap: 5px;
+  }
 }
 
 @media screen and (max-width: 660px) {
-    .modal__image {
-        display: none;
-    }
+  .modal__image {
+    display: none;
+  }
 
-    .modal__content {
-        max-width: calc(100% - 70px);
-    }
+  .modal__content {
+    max-width: calc(100% - 70px);
+  }
 
-    .modal__info {
-        padding: 0;
-    }
+  .modal__info {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 380px) {
-    .offer__section h2 {
-        max-width: 340px;
-    }
+  .offer__section h2 {
+    max-width: 340px;
+  }
 
-    .dishes__card {
-        padding: 40px 30px 42px;
-    }
+  .dishes__card {
+    padding: 40px 30px 42px;
+  }
 
-    .offer__links {
-        column-gap: 3px;
-    }
+  .offer__links {
+    column-gap: 3px;
+  }
 }

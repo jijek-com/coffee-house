@@ -1,92 +1,92 @@
 .main__box-fixed {
-    padding: 0 40px 100px;
+  padding: 0 40px 100px;
 }
 
 .main__bc {
-    position: relative;
+  position: relative;
 }
 
 .main__video {
-    position: absolute;
-    max-width: 1360px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    border-radius: 40px;
-    background: url('./../../assets/img/video-poster.png') center/cover no-repeat;
+  position: absolute;
+  max-width: 1360px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 40px;
+  background: url('./../../assets/img/video-poster.png') center/cover no-repeat;
 }
 
 .main__box {
-    position: relative;
-    padding: 101px 100px 100px;
-    z-index: 2;
+  position: relative;
+  padding: 101px 100px 100px;
+  z-index: 2;
 }
 
 .main__h1 {
-    max-width: 530px;
-    width: 100%;
-    text-wrap: wrap;
+  max-width: 530px;
+  width: 100%;
+  text-wrap: wrap;
 }
 
 .main__desc {
-    margin-top: 42px;
-    max-width: 530px;
-    width: 100%;
-    letter-spacing: 0.05px;
+  margin-top: 42px;
+  max-width: 530px;
+  width: 100%;
+  letter-spacing: 0.05px;
 }
 
 .main__btn {
-    display: flex;
-    margin-top: 39px;
-    padding: 20px 75px;
-    background-color: var(--bc);
-    column-gap: 8px;
-    border-radius: 40px;
-    max-width: 200px;
-    width: 100%;
+  display: flex;
+  margin-top: 39px;
+  padding: 20px 75px;
+  background-color: var(--bc);
+  column-gap: 8px;
+  border-radius: 40px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .main__btn .mobile {
-    opacity: 0;
-    transition: .6s;
+  opacity: 0;
+  transition: 0.6s;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .main__btn:hover .mobile {
-        opacity: 1;
-    }
+  .main__btn:hover .mobile {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .main__box {
-        padding: 101px 60px 100px;
-    }
+  .main__box {
+    padding: 101px 60px 100px;
+  }
 
-    .main__btn {
-        padding: 20px 64px;
-    }
+  .main__btn {
+    padding: 20px 64px;
+  }
 
-    .main__btn .header__menu-text {
-        font-size: 16px;
-    }
+  .main__btn .header__menu-text {
+    font-size: 16px;
+  }
 
-    .main__btn .header__menu-icon {
-        width: 20px;
-        height: 20px;
-    }
+  .main__btn .header__menu-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .main__box-fixed {
-        padding: 0 16px 0;
-    }
+  .main__box-fixed {
+    padding: 0 16px 0;
+  }
 
-    .main__box {
-        padding: 60px 16px 60px;
-    }
+  .main__box {
+    padding: 60px 16px 60px;
+  }
 
-    .main__btn {
-        margin-top: 38px;
-    }
+  .main__btn {
+    margin-top: 38px;
+  }
 }

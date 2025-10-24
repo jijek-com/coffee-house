@@ -1,135 +1,140 @@
-
 .favorite__h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .favorite__carousel {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel__list {
-    display: flex;
-    transition: transform 0.6s ease;
+  display: flex;
+  transition: transform 0.6s ease;
 }
 
 .carousel__item {
-    padding-top: 40px;
-    min-width: 100%;
+  padding-top: 40px;
+  min-width: 100%;
 }
 
 .carousel__controls {
-    padding: 0 44px 100px;
-    margin: 0 auto
+  padding: 0 44px 100px;
+  margin: 0 auto;
 }
 
 .carousel__btns {
-    position: absolute;
-    top: calc(50% - 52px);
-    transform: translate(0%, -50%);
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 88px);
+  position: absolute;
+  top: calc(50% - 52px);
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 88px);
 }
 
 .carousel__btns button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid var(--border-dark);
-    transition: background-color .6s ease;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--border-dark);
+  transition: background-color 0.6s ease;
 }
 
 .carousel__btns button path {
-    transition: stroke .6s ease;
+  transition: stroke 0.6s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .carousel__btns button:hover {
-        background: var(--border-dark);
-    }
+  .carousel__btns button:hover {
+    background: var(--border-dark);
+  }
 
-    .carousel__btns button:hover path {
-        stroke: var(--text-light);
-    }
+  .carousel__btns button:hover path {
+    stroke: var(--text-light);
+  }
 }
 
 .carousel__right svg {
-    rotate: 180deg;
+  rotate: 180deg;
 }
 
-
 .item__img {
-    display: block;
-    margin: 0 auto;
-    max-width: 480px;
-    width: 100%;
-    height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
+  height: auto;
 }
 
 .item__title {
-    margin-top: 21px;
-    text-align: center;
+  margin-top: 21px;
+  text-align: center;
 }
 
 .item__desc {
-    margin: 16px auto 0;
-    max-width: 480px;
-    text-align: center;
-    width: 100%;
+  margin: 16px auto 0;
+  max-width: 480px;
+  text-align: center;
+  width: 100%;
 }
 
 .item__price {
-    margin-top: 20px;
-    text-align: center;
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.item__price--crossed {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
 
 .carousel__indicators {
-    margin-top: 42px;
-    display: flex;
-    justify-content: center;
-    column-gap: 12px;
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
 }
 
 .carousel__indicators .indicator {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 4px;
-    background: var(--border-light);
-    border-radius: 6px;
-    overflow: hidden;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .progress {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0;
-    background: var(--border-dark);
-    transition: width linear;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: var(--border-dark);
+  transition: width linear;
 }
 
 .indicator.active .progress {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
-    .favorite__box-fixed {
-        padding: 100px 0 0;
-    }
+  .favorite__box-fixed {
+    padding: 100px 0 0;
+  }
 
-    .item__img {
-        max-width: 480px;
-        width: calc(100% - 38px);
-    }
+  .item__img {
+    max-width: 480px;
+    width: calc(100% - 38px);
+  }
 
-    .item__title {
-        margin-top: 26px;
-    }
+  .item__title {
+    margin-top: 26px;
+  }
 
-    .carousel__btns {
-        display: none;
-    }
+  .carousel__btns {
+    display: none;
+  }
 }

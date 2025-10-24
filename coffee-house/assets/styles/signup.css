@@ -1,0 +1,133 @@
+.signup {
+}
+
+.signup__box-fixed {
+  padding: 0 40px 100px;
+}
+
+.signup__h2 {
+  text-align: center;
+}
+
+.signup__form {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.signup__row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.signup__row:first-child .signup__col {
+  max-width: 400px;
+  width: 100%;
+}
+
+.signup__row:nth-child(2) {
+  justify-content: flex-start;
+}
+
+.signup__col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.signup__row:nth-child(2) .signup__col {
+  max-width: 260px;
+  width: 100%;
+}
+
+.signup__label {
+  font-weight: 400;
+}
+
+.signup__switch {
+  margin-top: 18px;
+  display: flex;
+  gap: 24px;
+}
+
+.signup__checkbox {
+  display: none;
+}
+
+input[type='radio']:checked + .signup__checkbox-style {
+  background: radial-gradient(circle at 50%, var(--bc) 30%, var(--border-dark) 30%);
+}
+
+.signup__checkbox-style {
+  margin-right: 8px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-dark);
+  border-radius: 50%;
+}
+
+.signup__btn {
+  margin: 13px auto 0;
+  padding: 9px 0;
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid var(--border-dark);
+  border-radius: 40px;
+  font-weight: 700;
+  transition:
+    background-color 0.6s ease,
+    color 0.6s ease;
+}
+
+.signup__btn:disabled {
+  cursor: not-allowed;
+}
+
+.signup__input.error {
+  border: 1px solid var(--error);
+  background-image: url('./../../assets/img/alert-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.signup__input.success {
+  border: 1px solid var(--success);
+  background-image: url('./../../assets/img/check.svg');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.error-message {
+  margin-top: 2px;
+  display: block;
+  height: 14px;
+  color: var(--error);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.signup__error-global {
+  margin-top: 12px;
+  height: 14px;
+  color: var(--error);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .signup__row {
+    flex-direction: column;
+  }
+
+  .signup__row:first-child .signup__col {
+    max-width: inherit;
+  }
+
+  .signup__row:nth-child(2) .signup__col {
+    max-width: inherit;
+  }
+}
