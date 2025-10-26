@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       await signIn(login, password);
       setTimeout(() => {
-        window.location.href = '/menu.html';
+        window.location.href = './menu.html';
       }, 1000);
     } catch (error) {
       globalError.textContent =
