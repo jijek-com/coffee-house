@@ -129,14 +129,14 @@
     position: fixed;
     top: 100px;
     right: -100%;
-    width: calc(100% - 40px);
+    width: calc(100%);
     height: calc(100vh - 250px);
     display: flex;
     justify-content: center;
     transition: right 0.3s ease;
     z-index: 20;
     background: var(--bc);
-    padding: 75px 20px;
+    padding: 75px 0;
   }
 
   .header__nav.active {
@@ -156,6 +156,8 @@
     justify-content: start;
     place-items: center;
     row-gap: 72px;
+    width: 100%;
+    overflow: auto;
   }
 
   .header .menu__link {

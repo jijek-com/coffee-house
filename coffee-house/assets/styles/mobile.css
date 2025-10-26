@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .mobile__section {
     padding: 0 16px 97px;
   }

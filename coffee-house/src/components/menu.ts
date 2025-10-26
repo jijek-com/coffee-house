@@ -20,7 +20,6 @@ async function initMenu(): Promise<void> {
   if (!dishesContainer) return;
 
   const loadContainer = createLoadContainer();
-  dishesContainer.after(loadContainer.container);
 
   showMenuLoader(dishesContainer);
 
@@ -86,6 +85,9 @@ function renderProducts(
 
   loadMoreBtn.style.display = width <= 768 && items.length > perPage ? 'block' : 'none';
   loadMoreBtn.dataset.visibleCount = perPage.toString();
+
+  const existing = document.querySelector('.dishes__load-container');
+  if (!existing) container.after(loadMoreBtn.parentElement!);
 }
 
 function showAllProducts(

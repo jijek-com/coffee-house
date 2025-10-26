@@ -5,6 +5,7 @@ import menu from './../../assets/img/coffee-cup.svg';
 import cart from './../../assets/img/shopping-bag.svg';
 
 import './../../assets/styles/header.css';
+import { checkAuth } from '../api/auth';
 
 class Header extends HTMLElement {
   private curPage?: string;
@@ -47,7 +48,7 @@ class Header extends HTMLElement {
     this.links = this.querySelectorAll('.header__nav a')!;
   }
 
-  render(): void {
+  public render(): void {
     this.innerHTML = `
       <header class="header">
         <div class="container">
@@ -110,7 +111,7 @@ class Header extends HTMLElement {
     `;
   }
 
-  initEvents(): void {
+  public initEvents(): void {
     this.querySelectorAll('.header__cart, .header__cart-mob').forEach((btn) =>
       btn.addEventListener('click', () => location.assign('cart.html'))
     );
@@ -144,8 +145,9 @@ class Header extends HTMLElement {
     if (e.key === 'cart') this.updateCartCount();
   }
 
-  private updateCartCount(): void {
+  private async updateCartCount(): Promise<void> {
     const cart = getCart();
+    const isAuthorized = await checkAuth().catch(() => false);
     const isMobile = window.innerWidth <= 768;
 
     if (isMobile) {
@@ -154,7 +156,9 @@ class Header extends HTMLElement {
       return;
     }
 
-    if (cart.length > 0) {
+    const shouldShowCart = cart.length > 0 || isAuthorized;
+
+    if (shouldShowCart) {
       this.cartBtn.style.display = 'flex';
       this.cartBtnCount.textContent = String(cart.length);
     } else {

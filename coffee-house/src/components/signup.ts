@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
       registerBtn.disabled = true;
 
       setTimeout(() => {
-        window.location.href = '/menu.html';
+        window.location.href = './menu.html';
       }, 1000);
     } catch (err) {
       globalError.textContent = (err as Error).message;
