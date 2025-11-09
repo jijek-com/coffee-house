@@ -31,6 +31,10 @@
   width: calc(100% - 88px);
 }
 
+html[data-theme='dark'] .carousel__btns button {
+  filter: invert(1);
+}
+
 .carousel__btns button {
   width: 60px;
   height: 60px;

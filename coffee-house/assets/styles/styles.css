@@ -8,6 +8,7 @@
 @import 'signin.css';
 @import 'signup.css';
 @import 'cart.css';
+@import 'coffee-game.css';
 
 :root {
   --bc: #e1d4c9;
@@ -19,6 +20,27 @@
   --placeholder: #a1a3b3;
   --success: #0dbb42;
   --error: #f44336;
+}
+
+[data-theme='dark'] {
+  --bc: #110e0c;
+  --text-dark: #bfc0c2;
+  --text-accent: #b0907a;
+  --text-light: #cfcfcf;
+  --border-dark: #403f3d;
+  --border-light: #666666;
+  --placeholder: #888888;
+  --success: #4edb7c;
+  --error: #f56c6c;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 47%;
+  right: 0;
+  background: var(--border-dark);
+  padding: 12px;
+  outline: 1px solid var(--error);
 }
 
 html {

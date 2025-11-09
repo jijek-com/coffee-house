@@ -7,6 +7,7 @@ import './../../assets/styles/styles.css';
 
 import { showModal } from './modal';
 import { checkAuth } from '../api/auth';
+import { changeTheme } from './theme';
 
 let products: Record<Category, ProductItem[]> | ErrorProduct = { coffee: [], tea: [], dessert: [] };
 
@@ -24,7 +25,11 @@ async function initMenu(): Promise<void> {
   showMenuLoader(dishesContainer);
 
   try {
-    const [isAuthorized, fetchedProducts] = await Promise.all([checkAuth(), fetchProducts()]);
+    const [isAuthorized, fetchedProducts, theme] = await Promise.all([
+      checkAuth(),
+      fetchProducts(),
+      changeTheme(),
+    ]);
 
     products = fetchedProducts;
     renderProducts(dishesContainer, currentCategory, isAuthorized, loadContainer.button);

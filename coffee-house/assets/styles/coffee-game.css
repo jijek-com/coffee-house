@@ -1,0 +1,52 @@
+.coffee {
+  position: relative;
+  width: calc(100% - 2rem);
+  margin: 2rem auto;
+  text-align: center;
+  background-color: var(--bc);
+  padding: 1rem;
+  border-radius: 12px;
+  color: var(--text-dark);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.coffee__board {
+  position: relative;
+  height: 400px;
+  background: var(--text-light);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0;
+  border: 1px solid var(--border-dark);
+}
+
+.coffee-bean {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('./../../assets/img/coffee-cup.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.coffee__btn {
+  margin: 20px auto 0;
+  padding: 20px 50px;
+  background-color: var(--text-accent);
+  color: var(--bc);
+  border-radius: 40px;
+  max-width: 200px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.coffee__over {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}

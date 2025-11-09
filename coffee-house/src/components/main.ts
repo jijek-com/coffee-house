@@ -4,6 +4,7 @@ import { checkAuth } from '../api/auth';
 import type { ProductItem } from '../types/products';
 
 import { initCarousel } from './carousel';
+import { changeTheme } from './theme';
 
 import { FavoriteImage } from '../data/favoriteImage';
 import defaultImage from './../../assets/img/not-image.png';
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 async function init(): Promise<void> {
   await renderFavorites();
+  await changeTheme();
 }
 
 function setListState(list: HTMLElement, state: 'loading' | 'empty' | 'error'): void {

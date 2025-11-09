@@ -219,9 +219,26 @@
             </div>
           </div>
         </article>
+
+        <article class="coffee coffee__section" id="coffee-game">
+          <div class="container coffee__container">
+            <div class="coffee__box-fixed">
+              <h2 class="coffee__h2">Collect as much coffee as you can!</h2>
+              <p class="coffee__desc">Click on the falling cups and score points for 30 seconds!</p>
+              <div class="coffee__score">Score: <span id="score">0</span></div>
+              <div class="coffee__board" id="gameBoard"></div>
+              <button id="startGame" class="coffee__btn fs-links">Start game</button>
+              <div id="gameOver" class="coffee__over hidden">
+                Time over! Your score: <span id="finalScore"></span>
+              </div>
+            </div>
+          </div>
+        </article>
       </main>
 
       <footer-component></footer-component>
+
+      <button id="theme-toggle">🌙 / ☀️</button>
     </div>
   </body>
 </html>
