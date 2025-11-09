@@ -6,7 +6,7 @@ import { User } from '../types/profile';
 
 import { getCurrentUser } from '../utils/user';
 import { getCart, saveCart } from '../utils/cart';
-import { changeTheme } from "./theme";
+import { changeTheme } from './theme';
 
 import { ProductImage } from '../data/productImage';
 

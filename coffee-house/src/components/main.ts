@@ -4,7 +4,7 @@ import { checkAuth } from '../api/auth';
 import type { ProductItem } from '../types/products';
 
 import { initCarousel } from './carousel';
-import { changeTheme } from "./theme";
+import { changeTheme } from './theme';
 
 import { FavoriteImage } from '../data/favoriteImage';
 import defaultImage from './../../assets/img/not-image.png';
