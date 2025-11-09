@@ -11,6 +11,7 @@ module.exports = {
     cart: './src/components/cart.ts',
     signin: './src/components/signin.ts',
     signup: './src/components/signup.ts',
+    theme: './src/components/theme.ts',
   },
   output: {
     filename: '[name].bundle.js',
@@ -70,19 +71,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',
-      chunks: ['main', 'header', 'footer', 'carousel'],
+      chunks: ['main', 'header', 'footer', 'carousel', 'theme'],
       favicon: 'favicon.ico',
     }),
     new HtmlWebpackPlugin({
       template: './menu.html',
       filename: 'menu.html',
-      chunks: ['header', 'footer', 'menu'],
+      chunks: ['header', 'footer', 'menu', 'theme'],
       favicon: 'favicon.ico',
     }),
     new HtmlWebpackPlugin({
       template: './cart.html',
       filename: 'cart.html',
-      chunks: ['header', 'footer', 'cart'],
+      chunks: ['header', 'footer', 'cart', 'theme'],
       favicon: 'favicon.ico',
     }),
     new HtmlWebpackPlugin({
@@ -93,13 +94,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './signIn.html',
       filename: 'signIn.html',
-      chunks: ['header', 'footer', 'signin'],
+      chunks: ['header', 'footer', 'signin', 'theme'],
       favicon: 'favicon.ico',
     }),
     new HtmlWebpackPlugin({
       template: './signUp.html',
       filename: 'signUp.html',
-      chunks: ['header', 'footer', 'signup'],
+      chunks: ['header', 'footer', 'signup', 'theme'],
       favicon: 'favicon.ico',
     }),
   ],

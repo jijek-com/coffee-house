@@ -1,12 +1,15 @@
 import { signIn } from '../api/auth';
+import { changeTheme } from "./theme";
 
 import './../../assets/styles/styles.css';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const loginInput = document.querySelector('#login') as HTMLInputElement;
   const passwordInput = document.querySelector('#password') as HTMLInputElement;
   const signInBtn = document.querySelector('.signin__btn') as HTMLButtonElement;
   const globalError = document.querySelector('.signin__error-global') as HTMLElement;
+
+  await changeTheme();
 
   function validateLogin(value: string) {
     if (value.length < 3) return 'Login must be at least 3 characters';

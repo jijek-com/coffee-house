@@ -58,6 +58,10 @@
   height: 24px;
 }
 
+html[data-theme='dark'] .total__btn-delete-icon {
+  filter: invert(1);
+}
+
 .total__price {
   display: flex;
   align-items: center;

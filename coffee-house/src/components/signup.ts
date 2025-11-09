@@ -1,14 +1,16 @@
 import { signUp } from '../api/auth';
-
+import { changeTheme } from "./theme";
 import './../../assets/styles/styles.css';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const form = document.getElementById('signupForm') as HTMLFormElement;
   const registerBtn = document.getElementById('registerBtn') as HTMLButtonElement;
   const globalError = document.getElementById('globalError') as HTMLElement;
 
   const citySelect = document.getElementById('city') as HTMLSelectElement;
   const streetSelect = document.getElementById('street') as HTMLSelectElement;
+
+  await changeTheme();
 
   const streets: Record<string, string[]> = {
     london: [

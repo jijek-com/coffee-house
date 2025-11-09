@@ -69,6 +69,12 @@
   height: 64px;
 }
 
+html[data-theme='dark'] .header__logo img,
+html[data-theme='dark'] .header__cart-img,
+html[data-theme='dark'] .header__menu-icon {
+  filter: invert(1);
+}
+
 .header__cart {
   display: flex;
   align-self: center;

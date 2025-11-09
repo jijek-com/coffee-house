@@ -6,6 +6,7 @@ import { User } from '../types/profile';
 
 import { getCurrentUser } from '../utils/user';
 import { getCart, saveCart } from '../utils/cart';
+import { changeTheme } from "./theme";
 
 import { ProductImage } from '../data/productImage';
 
@@ -32,6 +33,7 @@ async function initCartPage() {
 
   updateAuthUI(isAuthorized, user);
   renderCart(cart);
+  await changeTheme();
 
   if (!isAuthorized || cart.length === 0) {
     confirmBtn.style.display = 'none';
