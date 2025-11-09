@@ -8,6 +8,7 @@
 @import 'signin.css';
 @import 'signup.css';
 @import 'cart.css';
+@import 'coffee-game.css';
 
 :root {
   --bc: #e1d4c9;

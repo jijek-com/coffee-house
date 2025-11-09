@@ -12,6 +12,7 @@ module.exports = {
     signin: './src/components/signin.ts',
     signup: './src/components/signup.ts',
     theme: './src/components/theme.ts',
+    game: './src/components/coffee-game.ts',
   },
   output: {
     filename: '[name].bundle.js',
@@ -71,7 +72,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',
-      chunks: ['main', 'header', 'footer', 'carousel', 'theme'],
+      chunks: ['main', 'header', 'footer', 'carousel', 'theme', 'game'],
       favicon: 'favicon.ico',
     }),
     new HtmlWebpackPlugin({
